@@ -1,13 +1,19 @@
+import { Dispatch, SetStateAction } from "react";
 import "./Item.css";
 
 interface ItemProps {
   title: string;
   active: boolean;
+  setFolder: Function;
 }
 
-export default function Item({ title, active }: ItemProps) {
+export default function Item({ title, active, setFolder }: ItemProps) {
   return (
-    <button className={active ? "active item" : "item"} type="button">
+    <button
+      onClick={() => setFolder(title)}
+      className={active ? "active item" : "item"}
+      type="button"
+    >
       {title}
     </button>
   );
