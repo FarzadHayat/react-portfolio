@@ -1,0 +1,8 @@
+.list {
+  overflow: auto;
+}
+
+hr {
+  border: 2px solid var(--accent);
+  margin: 0 0.5rem;
+}

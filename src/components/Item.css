@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  width: 25vw;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  color: var(--text);
+  font-size: large;
+  background: var(--background);
+}
+
+.item:hover {
+  background: rgba(80, 200, 80, 0.5);
+}
+
+.active {
+  background: rgba(128, 128, 128, 0.5);
+}
